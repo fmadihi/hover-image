@@ -1,0 +1,37 @@
+section.first{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;
+}
+section.first>section.image{
+    width: inherit;
+    height: inherit;
+    border: 2px solid black;
+    position: absolute;
+    transform-origin: top right;
+    transition: all 300ms linear;
+}
+section.first:hover>section.image{
+    transform: scale(2,2);
+}
+section.first>section.image>img{
+    width: inherit;
+    height: inherit;
+}
+section.first>section.third{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    line-height: 300px;
+    color: whitesmoke;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);  
+    transform: scale(0,0);
+    transform-origin: bottom left;
+    transition: all 300ms linear;
+}
+section.first:hover>section.third{
+    transform: scale(1,1);
+}
